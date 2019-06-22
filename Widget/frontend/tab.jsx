@@ -9,6 +9,15 @@ class Tab extends React.Component{
     };
   }
 
+  click(title){
+    title.preventDefault();
+    this.setState(
+      {
+        selected_tab : this.state.selected_tab + 1
+      }
+    )
+  }
+
   render(){
     return (
     <div>
